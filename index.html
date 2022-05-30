@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  nav {
+    font-size: 1.1rem;
+    height: 4rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: 1px solid blue; */
+  }
+
+  nav > ul {
+    max-width: 20%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    right: 5rem;
+    /* border: 1px solid red; */
+  }
+
+  ul > li {
+    margin-inline: 1rem;
+  }
+
+  #coffee_count {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    /* border: 3px solid purple; */
+  }
+
+  #menu {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 2rem;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .coffee {
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .coffee > img {
+    max-width: 90%;
+    /* border: 1px solid red; */
+  }
+
+  #add_to_bucket {
+    margin-bottom: 2rem;
+    padding: 0.4rem 1rem;
+  }
+
+</style>
+
+<body>
+    <div id="navbar">
+      <!--Add navbar divs here-->
+      <!-- Link to bucket.html -->
+      <nav>
+        <ul>
+          <li>login</li>
+          <li>Sign-Up</li>
+          <li>Products </li>
+         <a href="./bucket.html"><li id="go_to_bucket">Bucket</li></a>
+        </ul>
+      </nav>
+
+      <div id="coffee_count">
+        0
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but like this "5" -->
+      </div>
+    </div>
+
+    <div id="menu">
+      <!--Show coffee list here in grid format-->
+      <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
